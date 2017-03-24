@@ -9,6 +9,7 @@ class Cors
 {
     public function __invoke(Request $request, Response $response, $next)
     {
+        /** @var Response $response */
         $response = $next($request, $response);
 
         return $response->withHeader('Access-Control-Allow-Origin', getenv('CLIENT_URL'))

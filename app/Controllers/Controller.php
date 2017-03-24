@@ -4,6 +4,9 @@ namespace App\Controllers;
 
 use Interop\Container\ContainerInterface;
 
+/**
+ * @package App\Controllers
+ */
 class Controller
 {
     protected $c;
