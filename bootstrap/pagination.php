@@ -9,3 +9,4 @@ Paginator::currentPathResolver(function () {
 Paginator::currentPageResolver(function () {
     return $_REQUEST['page'] ?? 1;
 });
+
